@@ -55,7 +55,22 @@ h1 {
     align-content: center;
     margin-right: 60px;
     text-align: right;
+    position: relative;
+    
+    
+    
 
+    span{
+
+      position: absolute;
+      background-color: #ee2211;
+      width: 60px;
+      height: 5px;
+      top: 30px;
+      right: -90px;
+      
+
+    }
     p {
       font-size: 20px;
     }
