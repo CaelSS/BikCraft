@@ -1,13 +1,19 @@
+/* faltou tu resetar o css, tem  margin e padding que são do navegador */
+
 body {
   background-color: #f7f7f7;
   font-family: Arial, Helvetica, sans-serif;
   max-width: 1200px;
   margin: auto;
+  /* esse max-width e margin 0 auto no body não é legal, 
+  se tu tiver um header ou footer que tenha uma cor diferente do body ele ficará cortado na tela por conta deste max-width */
 }
 
 h1 {
   text-align: center;
   font-size: 50px;
+  /* esse h1 aqui é meio perigoso, tu tá estilizando todos os h1 do projeto desta forma, 
+  no teu projeto só tem esse, mas se tivesse usando outro h1, pegaria esse estilo também */
 }
 
 .navegation {
@@ -34,6 +40,7 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: white;
+  /* aqui no main que você define o max-width e o margin 0  */
 
   img {
     max-width: 100%;
@@ -55,10 +62,14 @@ h1 {
     align-content: center;
     margin-right: 60px;
     text-align: right;
+<<<<<<< HEAD
     position: relative;
     
     
     
+=======
+    /* aqui tu poderia usar um padding no lugar do margin-right */
+>>>>>>> b226256fdb08e67e2cee71e2136deecf4015088e
 
     span{
 
@@ -90,18 +101,17 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 10fr;
   align-items: center;
+  /* troca o margin por padding aqui */
 
   .icon {
     width: 25px;
   }
 }
 
-footer{
-
-background-color: #ece8e7;
-padding: 20px;
-text-align: center;
-max-width: 100%;
-
-
+footer {
+  background-color: #ece8e7;
+  padding: 20px;
+  text-align: center;
+  max-width: 100%;
+  /* o max-width aqui por padrão já é 100%, ele não tá ocupando o tamanho da tela toda, por conta do max-width que tem no body */
 }
