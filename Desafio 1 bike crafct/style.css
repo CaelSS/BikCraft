@@ -62,14 +62,10 @@ h1 {
     align-content: center;
     margin-right: 60px;
     text-align: right;
-<<<<<<< HEAD
     position: relative;
     
     
     
-=======
-    /* aqui tu poderia usar um padding no lugar do margin-right */
->>>>>>> b226256fdb08e67e2cee71e2136deecf4015088e
 
     span{
 
@@ -97,7 +93,7 @@ h1 {
 }
 
 .info {
-  margin: 30px;
+  padding: 30px;
   display: grid;
   grid-template-columns: 1fr 10fr;
   align-items: center;
@@ -112,6 +108,5 @@ footer {
   background-color: #ece8e7;
   padding: 20px;
   text-align: center;
-  max-width: 100%;
-  /* o max-width aqui por padrão já é 100%, ele não tá ocupando o tamanho da tela toda, por conta do max-width que tem no body */
+ 
 }
