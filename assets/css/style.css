@@ -43,8 +43,8 @@ main {
   margin-top: 60px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* auto-rows para definir a altura das linhas do grid, defini 539 pois é a altura da imagem da bike */
-  grid-auto-rows: 539px;
+  /* auto-rows para definir a altura das linhas do grid, defini 388 pois é a altura da imagem da bike */
+  grid-auto-rows: 388px;
   background-color: white;
 
   img {
