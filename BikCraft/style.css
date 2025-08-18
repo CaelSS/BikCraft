@@ -51,6 +51,7 @@ main {
     text-align: center;
     background-color: #f7f7f7;
 
+    background-image: url(./imagens/img/img/onda.svg);
     h2 {
       font-size: 64px;
       color: rgba(0, 0, 0, 0.5);
@@ -97,11 +98,7 @@ main {
 
   }
 
-
-
 }
-
-
 
 .info {
 
