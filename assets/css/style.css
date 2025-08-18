@@ -1,7 +1,6 @@
 body {
   background-color: #f7f7f7;
   font-family: Arial, Helvetica, sans-serif;
-
 }
 
 h1 {
@@ -17,20 +16,19 @@ nav {
   flex-wrap: wrap;
 
   a {
-    width: 100px;
+    /* dê preferencia em usar padding para tamanho de botões */
+    /* width: 100px; */
     text-decoration: none;
     padding: 15px 20px;
     color: #000;
     background-color: white;
     border-radius: 4px;
     text-transform: uppercase;
-
-
+    border: 1px solid transparent;
   }
 
   a:hover {
     border: 1px solid #900;
-
   }
 }
 
@@ -40,6 +38,8 @@ main {
   margin-top: 60px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  /* auto-rows para definir a altura das linhas do grid, defini 539 pois é a altura da imagem da bike */
+  grid-auto-rows: 539px;
   background-color: white;
 
   img {
@@ -51,7 +51,7 @@ main {
     text-align: center;
     background-color: #f7f7f7;
 
-    background-image: url(./imagens/img/img/onda.svg);
+    background-image: url(../img/onda.svg);
     h2 {
       font-size: 64px;
       color: rgba(0, 0, 0, 0.5);
@@ -68,7 +68,6 @@ main {
 
     p {
       font-size: 20px;
-
     }
 
     a {
@@ -82,26 +81,21 @@ main {
 
     a:hover {
       background-color: #900;
-
     }
   }
 
-
   article::after {
-    content: " ";
+    content: ' ';
     display: inline-block;
     position: absolute;
     background-color: #ee2211;
-    width: calc(60/16*1rem);
+    width: calc(60 / 16 * 1rem);
     height: 5px;
     top: 30px;
-
   }
-
 }
 
 .info {
-
   .icon {
     width: 25px;
   }
@@ -112,12 +106,19 @@ main {
   padding: 40px;
   justify-content: center;
 
-
   li {
     display: grid;
     grid-template-columns: auto 1fr;
     column-gap: 20px;
     padding: 10px;
+
+    /* 
+      esse trecho aqui, adicionei essa borda da mesma largura que a do hover deste elemento, 
+      só que transparent, só para não dá aquele efeito do conteudo estar "saltando" no hover, pode comentar essa borda transparent pra tu ver a diferença.
+      o transition é pra deixar a animação mais suave
+    */
+    border-left: 4px solid transparent;
+    transition: all 0.3s;
 
     h3 {
       margin: 0px;
