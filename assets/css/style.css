@@ -31,10 +31,15 @@ nav {
     border: 1px solid #900;
   }
 }
-
+/* 
+  no container principal, use max-width + o tamanho no lugar de width: 80% por exemplo, sempre use max-width: ..px; + width: 100; 
+  o 80% fica zoado em telas menores
+*/
 main {
   margin: auto;
-  max-width: 80%;
+  /* max-width: 80%; */
+  max-width: 1100px;
+  width: 100%;
   margin-top: 60px;
   display: grid;
   grid-template-columns: 1fr 1fr;
