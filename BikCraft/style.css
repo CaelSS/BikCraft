@@ -9,7 +9,7 @@ h1 {
   font-size: 50px;
 }
 
-.navegation {
+nav {
   text-align: center;
   display: flex;
   gap: 20px;
@@ -24,10 +24,17 @@ h1 {
     background-color: white;
     border-radius: 4px;
     text-transform: uppercase;
+
+
+  }
+
+  a:hover {
+    border: 1px solid #900;
+
   }
 }
 
-.main {
+main {
   margin: auto;
   max-width: 80%;
   margin-top: 60px;
@@ -39,41 +46,30 @@ h1 {
     max-width: 100%;
   }
 
-  .bg-cor {
+  .subtitulo {
     align-content: center;
     text-align: center;
     background-color: #f7f7f7;
 
     h2 {
       font-size: 64px;
-      color: rgba(0, 0, 0, 0.5); /* preto 50% opaco */
+      color: rgba(0, 0, 0, 0.5);
+      /* preto 50% opaco */
       text-transform: uppercase;
     }
   }
 
-  .article {
+  article {
     align-content: center;
     padding: 30px;
     text-align: right;
     position: relative;
-    
-    
-    
 
-    span{
-
-      position: absolute;
-      background-color: #ee2211;
-      width: 60px;
-      height: 5px;
-      top: 30px;
-      right: -30px;
-      
-
-    }
     p {
       font-size: 20px;
+
     }
+
     a {
       display: inline-block;
       background-color: #ee2211;
@@ -82,24 +78,71 @@ h1 {
       text-decoration: none;
       color: #f7f7f7;
     }
+
+    a:hover {
+      background-color: #900;
+
+    }
   }
+
+
+  article::after {
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    background-color: #ee2211;
+    width: calc(60/16*1rem);
+    height: 5px;
+    top: 30px;
+
+  }
+
+
+
 }
 
+
+
 .info {
-  padding: 30px;
-  display: grid;
-  grid-template-columns: 1fr 10fr;
-  align-items: center;
 
   .icon {
     width: 25px;
+  }
+
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  justify-content: center;
+
+
+  li {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 20px;
+    padding: 10px;
+
+    h3 {
+      margin: 0px;
+    }
+
+    p {
+      margin-top: 0px;
+    }
+  }
+
+  li:hover {
+    border-left: #ee2211 solid 4px;
+  }
+
+  li:nth-child(odd) {
+    background-color: #e7e3e3;
   }
 }
 
 footer {
   margin-top: 40px;
-  background-color: #ece8e7;
+  background-color: #ffffff;
   padding: 20px;
   text-align: center;
- 
 }
